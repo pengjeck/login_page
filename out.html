@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>退出登录</title>
+    <style media="screen">
+        .clear{
+            width:60%;height:440px;margin:0 auto;
+        }
+        [type=submit],p{
+            font-family:  "微软雅黑";
+        }
+        #im{
+            width: 100%;
+            -webkit-transition: 0.5s linear;
+            -moz-transition: 0.5s linear;
+            -o-transition: 0.5s linear;
+            transition: 0.5s linear;
+        }
+        #im:hover{
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        #buttoms{
+            background-color: #fff;
+        }
+        #buttoms:hover{
+            background-color: #00CCEC;
+            color: #fff;
+            cursor: pointer;
+        }
+        .img-wrapper{
+            float: left;margin-top: 4%;width: 43%;
+        }
+        .form-wrapper{
+            float:left;width: 36%;
+        }
+        .head{
+            font-size:1.8em;margin-top:6%;
+        }
+        @media only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+            .img-wrapper{
+                display: none;
+            }
+            .line{
+                display: none;
+            }
+            .form-wrapper{
+                float: none!important;
+                margin: auto;
+                width: 100%;
+            }
+             .clear{
+                width: 100%;
+                height: 300px;
+            }
+            .logo{
+                width: 40%;
+            }
+            .head{
+                font-size: 1.5em;
+            }
+        }
+        @media screen and (max-device-width: 550px){
+            .img-wrapper{
+                display: none;
+            }
+            .line{
+                display: none;
+            }
+            .form-wrapper{
+                float: none!important;
+                margin: auto;
+                width: 100%;
+            }
+             .clear{
+                width: 100%;
+                height: 300px;
+            }
+            .logo{
+                width: 60%;
+            }
+            .head{
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body style="margin:0;">
+    <div align="center" style="margin-bottom:3%;"><img src="source\index_02.jpg" width="25%" class="logo"></div>
+    <div class="clear">
+        <div class="img-wrapper"><img src="source/jisuanji.jpg" alt="计算机学院" id="im"></div>
+        <div class="line" style="width:0px;height:300px;border:#77B3D4 1px solid;float:left;margin:0 10%;"></div>
+        <div class="form-wrapper" align="center"> 
+            <form action="" method="get">
+                <img src="source\profle.jpg" style="display:block;margin-top:30px;">
+                <input type="submit" value="退出/Exit" id="buttoms" style="font-size:1.2em;height:40px;width:120px;border: 2px solid #00CCEC;border-radius: 20px;cursor:pointer;margin:35px 0 0 0;outline:none;">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

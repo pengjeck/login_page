@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>修改密码</title>
+    <style>
+        .clear{
+            width:60%;height:440px;margin:0 auto;
+        }
+        [type=submit],p{
+            font-family:  "微软雅黑";
+        }
+        #im{
+            width:100%;
+            -webkit-transition: 0.5s linear;
+            -moz-transition: 0.5s linear;
+            -o-transition: 0.5s linear;
+            transition: 0.5s linear;
+        }
+        #im:hover{
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        #buttoms{
+            background-color: #fff;
+        }
+        #buttoms:hover{
+            background-color: #00CCEC;color: #fff;cursor: pointer;
+        }
+        .img-wrapper{
+            float: left;margin-top: 4%;width: 43%;
+        }
+        .form-wrapper{
+            float:left;width: 42%;
+        }
+        .head{
+            font-size:1.8em;margin:0;
+        }
+        @media screen and (max-device-width: 550px){
+            .img-wrapper{
+                display: none;
+            }
+            .line{
+                display: none;
+            }
+            .form-wrapper{
+                float: none!important;
+                margin: auto;
+                width: 100%;
+            }
+             .clear{
+                width: 100%;
+                height: 360px;
+            }
+            .logo{
+                width: 60%;
+            }
+            .head{
+                font-size: 1.5em;
+            }
+        }
+        @media only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+            .img-wrapper{
+                display: none;
+            }
+            .line{
+                display: none;
+            }
+            .form-wrapper{
+                float: none!important;
+                margin: auto;
+                width: 100%;
+            }
+            .clear{
+                width: 100%;
+                height: 360px;
+            }
+            .logo{
+                width: 60%;
+            }
+            .head{
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body style="margin:0;">
+    <div align="center" style="margin-bottom:3%;"><img src="source\index_02.jpg" width="25%" class="logo"></div>
+    <div class="clear">
+        <div class="img-wrapper"><img src="source/jisuanji.jpg" alt="计算机学院" id="im"></div>
+        <div class="line" style="width:0px;height:350px;border:#77B3D4 1px solid;float:left;margin:0 7%;"></div>
+        <div class="form-wrapper" align="center">
+            <form action="" method="get">
+                <p class="head">修改密码</p>
+                <p class="head" style="font-size:1em;margin:5px 0 30px 0;">Change Password</p>
+                <input type="text" id="int" placeholder="当前密码/Current password" style="display:block;margin:20px 0;height:32px;width:240px;border-radius: 10px;outline:none;border-style:none;border:1px #999999 solid;">
+                <input type="password" id="Int" placeholder="新密码/New password" style="display:block;margin:20px 0;height:32px;width:240px;border-radius: 10px;outline:none;border-style:none;border:1px #999999 solid;">
+                <input type="password" id="Int" placeholder="确认新密码/Confirm password" style="display:block;margin:20px 0;height:32px;width:240px;border-radius: 10px;outline:none;border-style:none;border:1px #999999 solid;">
+                <input type="submit" value="确认/OK" id="buttoms" style="font-size:1.2em;height:40px;width:120px;border: 2px solid #00CCEC;border-radius: 20px;cursor:pointer;margin:15px 0 0 0;outline:none;"><div></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
